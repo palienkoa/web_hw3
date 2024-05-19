@@ -31,7 +31,7 @@ def process_directory(source_dir, target_dir='dist'):
             # shutil.copy(source_file_path, target_file_path)
             thread = threading.Thread(target=copy_file, args=(source_file_path, target_file_path))
             thread.start()
-            thread.join()
+            thread.join() 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
